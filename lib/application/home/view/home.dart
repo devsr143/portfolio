@@ -37,16 +37,17 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          Positioned(
-            bottom: 200,
-            left: 550,
+          Align(
+            alignment: Alignment(0, 0.4),
             child: Row(
-              spacing: 40,
               mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SocialIcon(iconPath: "assets/icon/github.png", onTap: () => _openUrl(githubUrl)),
+                const SizedBox(width: 40),
                 SocialIcon(iconPath: "assets/icon/linkedin.png", onTap: () => _openUrl(linkedinUrl)),
-                SocialIcon(iconPath: "assets/icon/email.png", onTap: () => _openUrl(emailUrl)),
+                // const SizedBox(width: 40),
+                // SocialIcon(iconPath: "assets/icon/email.png", onTap: () => _openUrl(emailUrl)),
               ],
             ),
           ),
@@ -57,7 +58,7 @@ class _HomeState extends State<Home> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadiusGeometry.circular(20),
                 border: Border.all(
-                  color: Colors.white10
+                    color: Colors.white10
                 ),
               ),
               child: Row(
@@ -109,10 +110,10 @@ Justice Connect (Group Project) | Flutter, Python, SQLyog
                     ),
                   ),
                   NavButton(
-                    title: "SKILL'S",
+                    title: "SKILLS",
                     onPressed: () => showDetailCard(
                       context,
-                      "SKILL'S",
+                      "SKILLS",
                       '''
 •  Flutter & Dart
 •  State Management
@@ -124,10 +125,10 @@ Justice Connect (Group Project) | Flutter, Python, SQLyog
                     ),
                   ),
                   NavButton(
-                    title: "SOFT SKILL'S",
+                    title: "SOFT SKILLS",
                     onPressed: () => showDetailCard(
                       context,
-                      "SOFT SKILL'S",
+                      "SOFT SKILLS",
                       '''
 • Communication Skills
 • Problem-Solving
@@ -168,5 +169,3 @@ Justice Connect (Group Project) | Flutter, Python, SQLyog
     );
   }
 }
-
-

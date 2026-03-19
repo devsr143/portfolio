@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/Devachandsr.png"),
+                image: AssetImage("assets/portnew.png"),
                 fit: BoxFit.cover,
               ),
             ),

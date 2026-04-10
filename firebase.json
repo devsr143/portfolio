@@ -1,0 +1,29 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "porfolio-bbac3",
+          "configurations": {
+            "web": "1:79788104801:web:9b6ad1c1876ebe22c8de20",
+            "windows": "1:79788104801:web:523639490ce37ee0c8de20"
+          }
+        }
+      }
+    }
+  }
+}
